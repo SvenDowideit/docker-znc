@@ -4,17 +4,14 @@ docker-znc
 ### How to use
 
 ```bash
-# Create a .znc directory on your host
-$ mkdir ~/.znc
-
 # Launch the container
-$ CID=$(docker run -v ~/.znc:/znc-data stevedomin/znc run-znc)
+$ CID=$(docker run -name znc svendowideit/znc)
 
 # Find the random public port allocated to your container
 $ docker port $CID 6660
 
 # If you want to specify the port mapping
-$ docker run -p 36660:6660-v ~/.znc:/znc-data stevedomin/znc
+$ docker run -p 36660:6660 -name znc svendowideit/znc 
 ```
 
 The container will create a default configuration for you.  
