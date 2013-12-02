@@ -16,7 +16,7 @@ Version = 1.0
 LoadModule = partyline
 LoadModule = webadmin
 
-<User stevedomin>
+<User docker-znc>
   Pass       = sha256#fc51d0f36a88f57c0853c79bc0730645c2756fe30ea0ff2beb875fc49532dbc8#Nf38vSJ??z2:L-u0aQK3#
   Admin      = true
   Nick       = admin

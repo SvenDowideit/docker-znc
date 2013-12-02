@@ -15,10 +15,12 @@ RUN useradd znc
 ADD . /src
 RUN cd /src && chmod +x run-znc && cp run-znc /usr/local/bin/
 
+RUN	mkdir /znc-data
+RUN chown znc:znc /znc-data
+RUN chmod 777 /znc-data
+RUN	echo workround > /znc-data/.workaround
 
-VOLUME	["/znc-data"]
-#RUN chown znc:znc /znc-data
-#RUN chmod 777 /znc-data
-#USER znc
+USER znc
 EXPOSE 6660
+VOLUME	["/znc-data"]
 CMD run-znc
