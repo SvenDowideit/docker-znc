@@ -16,8 +16,8 @@ $ docker run -p 36660:6660 -name znc svendowideit/znc
 
 The container will create a default configuration for you.  
 Once the container is running, you can go to the znc webadmin at : [http://your-ip:port](http://your-ip:port).  
-The default login/password to access it is : admin/admin.
+The default login/password to access it is : docker-znc/docker-admin.
 
-Create a new user and delete the admin user once you made sure you can log in with the newly created one.
+Create a new user and delete the docker-admin user once you made sure you can log in with the newly created one.
 
-SSL is activated by default and znc will generate a certificate in your ~/.znc directory if it doesn't exist already.
+SSL is activated by default and znc will generate a certificate in the /znc-data VOLUME if it doesn't exist already.
