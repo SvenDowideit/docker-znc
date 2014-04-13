@@ -13,10 +13,10 @@ LoadModule = webadmin
 <User docker-znc>
 	Pass       = sha256#462e54cae07d6e036800944c1835f689bd95b0514b3ced990a9386874cb945ee#6bN5DaP.!lzYkt9fpFr0#
 	Admin      = true
-	Nick       = docker-znc
-	AltNick    = docker-znc_
-	Ident      = docker-znc
-	RealName   = Got ZNC?
+	Nick       = SvenDowideit
+	AltNick    = SvenDowideit_
+	Ident      = SvenDowideit
+	RealName   = Sven Dowideit <SvenDowideit@home.org.au>
 	Buffer     = 999
 	KeepBuffer = true
 	ChanModes  = +stn
@@ -31,6 +31,16 @@ LoadModule = webadmin
 	Server     = irc.freenode.net 6667 
 
 	<Chan #docker>
+	</Chan>
+	<Chan #docker-dev>
+	</Chan>
+	<Chan #docker-core>
+	</Chan>
+	<Chan #docker-osx>
+	</Chan>
+	<Chan #uwiki>
+	</Chan>
+	<Chan #mkdocs>
 	</Chan>
 </User>
 
