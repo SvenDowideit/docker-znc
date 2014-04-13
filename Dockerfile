@@ -3,11 +3,11 @@
 # VERSION               0.1.0
 # DOCKER-VERSION        0.7.0
 #
-# docker build -t znc .
-# docker run -d -p 6660:6660 -p 6667:6667 -name znc znc
+CMDBUILD docker build -t znc .
+CMDRUN docker run -d -p 6660:6660 -p 6667:6667 -v /znc-data -name znc znc
 
-FROM       stackbrew/debian
-MAINTAINER Sven Dowideit "SvenDowideit@home.org.au"
+FROM       debian:stable
+MAINTAINER Sven Dowideit "SvenDowideit@home.org.au" (@SvenDowideit)
 
 # make sure the package repository is up to date
 RUN 	apt-get update
